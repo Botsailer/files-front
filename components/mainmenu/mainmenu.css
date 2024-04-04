@@ -1,0 +1,23 @@
+#menu li::before{
+    content: '> ';
+    display: none;
+  }
+  
+#menu li:hover::before{
+    display: inline;
+    /* margin-right: 5px; */
+  }
+
+#menu li::after{
+    content: ' <';
+    display: none;
+  }
+
+#menu li:hover::after{
+    display: inline;
+    /* margin-left: 5px; */
+  }
+
+#menu li:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+  }

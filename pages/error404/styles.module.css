@@ -1,0 +1,110 @@
+@font-face { font-family: 'Keshiki';  src: url("font-family/Keshiki/Sdasian-WyDon.ttf");  }
+@font-face { font-family: 'sd-asian'; src: url("font-family/SD-Asian/Sdasian-WyDon.ttf"); }
+@font-face { font-family: 'Poppins'; src: url("font-family/Poppins/Poppins-Medium.ttf");}
+
+#video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -2;
+    
+}
+
+.befvid {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.befvid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    color: aliceblue;
+    user-select: none;
+    z-index: 1651;
+}
+
+.page-content {
+    text-align: center;
+    margin-top: 12rem;
+    padding: 0 10px;
+}
+
+.page-content .inner-content .heading {
+    font-size: 5rem;
+    font-family: 'sd-asian';
+}
+
+.page-content .inner-content p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-content .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-content .buttons a {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0 16px;
+    border-radius: 16px;
+    font-size: 13px;
+    min-width: 120px;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(60px);
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid #12f0b8;
+}
+
+
+
+
+.page-content .buttons a.active {
+    background-color: #f74a1e;
+    color: rgb(14, 255, 6);
+    font-size: 1.5rem;
+    font-style: bold;
+}
+
+.page-content .buttons a.active:hover {
+    box-shadow: 0 10px 80px rgba(14, 241, 101, 0.747);
+}
+
+@media (max-width: 600px) {
+    .page-content .buttons {
+        flex-direction: column;
+        margin: auto;
+    }
+    .page-content .buttons a {
+        margin: 100px auto;
+    }
+    .page-content .inner-content .heading {
+        font-size: 3rem;
+        font-family: 'sd-asian';
+    }
+}
+
+
+
+

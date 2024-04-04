@@ -1,0 +1,18 @@
+
+@import url(https://db.onlinewebfonts.com/c/50866396b50148c96c2b2d6863de46a6?family=Friend+or+Foe+Tall+BB);
+
+.SL_container {
+    color: white;
+    font-family: "Friend or Foe Tall BB";
+    font-size: 50px;
+    text-shadow:0 0 10px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 0.8);
+
+}
+
+.gradient-border {
+    border: 2px solid transparent;
+    background-image: linear-gradient(90deg, transparent 10%, rgba(0, 140, 200, 0.3),rgba(0, 140, 200, 0.3), rgba(0, 140, 200, 0.3), transparent 90%);
+    border-image: linear-gradient(to right, transparent 10%, #00e5ff 25%, #00e5ff 50%, #00e5ff 75%, transparent 90%) 10;
+    padding: 2px;
+  }
+  

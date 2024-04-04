@@ -1,0 +1,50 @@
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 16px;
+  background-color: transparent;
+  
+}
+.user-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    height: 100% !important;
+    
+  }
+
+
+    
+  .user-card__content {
+    padding: 16px;
+  }
+  
+  .user-card__title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: rgb(248, 6, 6);
+    font-size: 1.4rem;
+    font-style:italic;
+    font-weight: bold;
+  }
+  
+  .user-card__description {
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  
+  .user-card__links {
+    display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+  }
+  
+  .user-card__link {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.7rem;
+    background-color: rgb(10, 112, 201);
+
+  }

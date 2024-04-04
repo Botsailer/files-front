@@ -1,0 +1,255 @@
+
+.body {
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp2595139.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  
+}
+
+  .container {
+    position: absolute;
+    right: 30px;
+  }
+  
+  .message {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: rgba(218, 1, 1, 0.678);
+    font-weight: 500;
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    backdrop-filter: blur(15px);
+   background-color: #f7f7f700;
+    animation: flux 2s linear infinite;
+  }
+
+  .terminal {
+    background-color: rgba(0, 0, 0, 0.75); 
+    backdrop-filter: blur(10px);
+    color: #00FF00;
+    margin-top: 20px;
+    height: 10rem;
+    width: 12rem;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    border-radius: 15px; 
+  }
+  .terminal::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border-radius: 0.6rem 0.6rem 0 0 ;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: chasing-border 3s linear infinite;
+  }
+
+
+  #exclam{
+    color: red;
+    font-size: 2rem;
+   font-weight: 900;
+  }
+  
+
+
+  .message2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 150, 30);
+    font-weight: 300;
+    width: 360px;
+    position: absolute;
+    top: 280px;
+    left: 40px;
+  }
+  
+  .neon {
+    text-align: center;
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 90px;
+    color: #5BE0B3;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px #6EECC1;
+    animation: flux 2s linear infinite;
+  }
+  
+  .door-frame {
+  
+    width: 295px;
+    border-radius: 90px 90px 0 0;
+    background-color: #8594A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .door {
+    height: 450px;
+    width: 250px;
+    border-radius: 70px 70px 0 0;
+    background-color: #A0AEC0;
+  }
+
+  
+  .eye {
+    top: 15px;
+    left: 25px;
+    height: 5px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(243, 7, 7);
+    animation: eye 7s ease-in-out infinite;
+    position: absolute;
+  }
+
+
+@keyframes chasing-border {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 300px 0;
+    }
+}
+
+  .eye2 {
+    left: 65px;
+  }
+  .window {
+    height: 40px;
+    width: 130px;
+    background-color: #1C2127;
+    border-radius: 3px;
+    margin: 80px auto;
+    position: relative;
+  }
+  
+  .leaf {
+    height: 40px;
+    width: 130px;
+    background-color: #8594A5;
+    border-radius: 3px;
+    margin: 80px auto;
+    animation: leaf 7s infinite;
+    transform-origin: right;
+  }
+  
+  .handle {
+    height: 8px;
+    width: 50px;
+    border-radius: 4px;
+    background-color: #EBF3FC;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 30px;
+  }
+  
+  .rectangle {
+    height: 70px;
+    width: 25px;
+    background-color: #CBD8E6;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 20px;
+  }
+  
+  @keyframes leaf {
+    0% {
+      transform: scaleX(1);
+    }
+    5% {
+      transform: scaleX(0.2);
+    }
+    70% {
+      transform: scaleX(0.2);
+    }
+    75% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  @keyframes eye {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    5% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(15px);
+    }
+    35% {
+      transform: translateX(15px);
+    }
+    40% {
+      transform: translateX(-15px);
+    }
+    60% {
+      transform: translateX(-15px);
+    }
+    65% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 5px #f10000, 0 0 15px #d44242, 0 0 50px #ee0505, 0 0 50px #d83030, 0 0 2px #B9FFE8, 2px 2px 3px #12E29C;
+      color: #4BFFEF;
+    }
+    50% {
+      text-shadow: 0 0 3px #00B58D, 0 0 7px #00B58D, 0 0 25px #ff0808, 0 0 25px #00B58D, 0 0 2px #00B58D, 2px 2px 3px #006A60;
+      color: #63D3AE;
+    }
+  }
+  /* add media query if  you want to support mobile devices  disable door just show text*/
+@media only screen and (max-width:770px){
+  .door ,.door-frame{
+    display: none;
+    }
+  
+    .message{
+      text-align: left;
+      margin-top: -40px;
+    }
+  
+    .message2{
+      width: auto;
+      height: auto;
+
+      margin-right: 50px;
+    }
+    .body{
+      /* make image to take size cover even for mobile device */
+      overflow: hidden;
+      background-size: cover !important;
+      -webkit-background-size: cover !important;
+    }
+  
+}

@@ -1,0 +1,58 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    justify-content: space-evenly;
+    transition: all 400ms ease;
+
+    
+}
+
+.menuitems {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+
+
+
+.menuitems div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 0.25rem;
+    width: 9rem;
+    gap: 0.75rem;
+    margin:20px 0 0 0; 
+   border-radius: 15px;
+   border: #ca67cbd2 3px  solid ;
+}
+.menuitems div:hover {
+    transition: ease-in 1s;
+    box-shadow: inset 300px 0 0 0 #ca67cbd2;
+    color: rgb(11, 11, 15);
+    scale: 1.2;
+}
+
+
+
+
+
+.menuitems span {
+
+    width:  100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.menuicons{
+    justify-content: space-evenly;
+    font-size: 2rem;
+    height: 50%;
+}

@@ -1,0 +1,19 @@
+#body{
+   display: flex;
+   flex-direction: column;
+   background-color: transparent;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+   margin: 40px 20px 20px 80px; 
+    scrollbar-width:  none;
+}
+
+
+
+
+@media only screen and (max-width:570px){
+    #body{
+        display: flexbox;
+    }
+}
